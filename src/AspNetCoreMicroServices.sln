@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreMicroServices", "AspNetCoreMicroServices\AspNetCoreMicroServices.csproj", "{7B2A1879-A21D-4F6B-B70E-E44E910B5023}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{36E6DA9F-B5BC-4205-8536-2683F27D2B09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{2F190404-1B48-48AE-A18D-75E0DEA86629}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{7D3297C8-93C0-4A9F-81E7-C3F8EF6EA7A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +15,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7B2A1879-A21D-4F6B-B70E-E44E910B5023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7B2A1879-A21D-4F6B-B70E-E44E910B5023}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7B2A1879-A21D-4F6B-B70E-E44E910B5023}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7B2A1879-A21D-4F6B-B70E-E44E910B5023}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D3297C8-93C0-4A9F-81E7-C3F8EF6EA7A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D3297C8-93C0-4A9F-81E7-C3F8EF6EA7A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D3297C8-93C0-4A9F-81E7-C3F8EF6EA7A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D3297C8-93C0-4A9F-81E7-C3F8EF6EA7A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2F190404-1B48-48AE-A18D-75E0DEA86629} = {36E6DA9F-B5BC-4205-8536-2683F27D2B09}
+		{7D3297C8-93C0-4A9F-81E7-C3F8EF6EA7A8} = {2F190404-1B48-48AE-A18D-75E0DEA86629}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {99E09A3F-26C2-45BB-A0B8-E639FA1FD3A9}
